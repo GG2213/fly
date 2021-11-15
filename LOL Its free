@@ -13,7 +13,7 @@
 				if potato == 1 then
 					repeat wait() until lplayer and lplayer.Character and lplayer.Character:FindFirstChild('HumanoidRootPart') and lplayer.Character:FindFirstChild('Humanoid')
 					repeat wait() until Mouse
-					speedfly = 1
+					speedfly = 100
 	
 					local T = lplayer.Character.HumanoidRootPart
 					local CONTROL = {F = 0, B = 0, L = 0, R = 0}
