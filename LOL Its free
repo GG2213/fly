@@ -1,0 +1,253 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local V3 = Instance.new("ScreenGui")
+local Tab = Instance.new("Frame")
+local UIGradient = Instance.new("UIGradient")
+local TopBar = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local UIGradient_2 = Instance.new("UIGradient")
+local clear = Instance.new("ImageButton")
+local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
+local Buttons = Instance.new("ScrollingFrame")
+local UIListLayout = Instance.new("UIListLayout")
+local TextButton = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
+local TextButton_2 = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local TextButton_3 = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local TextButton_4 = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local TextButton_5 = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local TextButton_6 = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local TextButton_7 = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local TextButton_8 = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+
+--Properties:
+
+V3.Name = "V3"
+V3.Parent = game.CoreGui
+V3.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Tab.Name = "Tab"
+Tab.Parent = V3
+Tab.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+Tab.BorderSizePixel = 0
+Tab.Position = UDim2.new(0.367243111, 0, 0.400394469, 0)
+Tab.Size = UDim2.new(0, 568, 0, 262)
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient.Offset = Vector2.new(0.0873321742, -0.526717544)
+UIGradient.Rotation = -8.6217756271362
+UIGradient.Parent = Tab
+
+TopBar.Name = "TopBar"
+TopBar.Parent = Tab
+TopBar.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+TopBar.BorderSizePixel = 0
+TopBar.Position = UDim2.new(0, 0, -0.175572515, 0)
+TopBar.Size = UDim2.new(0, 568, 0, 46)
+
+TextLabel.Parent = TopBar
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.0176056344, 0, 0.152173907, 0)
+TextLabel.Size = UDim2.new(0, 51, 0, 31)
+TextLabel.Font = Enum.Font.GothamBold
+TextLabel.Text = "GG"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 36.000
+TextLabel.TextWrapped = true
+
+UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 255, 148)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(99, 100, 103))}
+UIGradient_2.Parent = TextLabel
+
+clear.Name = "clear"
+clear.Parent = TopBar
+clear.BackgroundTransparency = 1.000
+clear.LayoutOrder = 5
+clear.Position = UDim2.new(0.929577589, 0, 0.173913032, 0)
+clear.Size = UDim2.new(0, 29, 0, 31)
+clear.ZIndex = 2
+clear.Image = "rbxassetid://3926305904"
+clear.ImageRectOffset = Vector2.new(924, 724)
+clear.ImageRectSize = Vector2.new(36, 36)
+
+UIAspectRatioConstraint.Parent = clear
+
+Buttons.Name = "Buttons"
+Buttons.Parent = Tab
+Buttons.Active = true
+Buttons.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Buttons.BackgroundTransparency = 1.000
+Buttons.BorderSizePixel = 0
+Buttons.Position = UDim2.new(0.0176056344, 0, 0.0305343512, 0)
+Buttons.Size = UDim2.new(0, 134, 0, 245)
+Buttons.CanvasPosition = Vector2.new(0, 225)
+Buttons.ScrollBarThickness = 0
+
+UIListLayout.Parent = Buttons
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout.Padding = UDim.new(0, 4)
+
+TextButton.Parent = Buttons
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.Size = UDim2.new(0, 130, 0, 34)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextSize = 14.000
+
+UICorner.Parent = TextButton
+
+TextButton_2.Parent = Buttons
+TextButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_2.Size = UDim2.new(0, 130, 0, 34)
+TextButton_2.Font = Enum.Font.SourceSans
+TextButton_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.TextSize = 14.000
+
+UICorner_2.Parent = TextButton_2
+
+TextButton_3.Parent = Buttons
+TextButton_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_3.Size = UDim2.new(0, 130, 0, 34)
+TextButton_3.Font = Enum.Font.SourceSans
+TextButton_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_3.TextSize = 14.000
+
+UICorner_3.Parent = TextButton_3
+
+TextButton_4.Parent = Buttons
+TextButton_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_4.Size = UDim2.new(0, 130, 0, 34)
+TextButton_4.Font = Enum.Font.SourceSans
+TextButton_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_4.TextSize = 14.000
+
+UICorner_4.Parent = TextButton_4
+
+TextButton_5.Parent = Buttons
+TextButton_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_5.Size = UDim2.new(0, 130, 0, 34)
+TextButton_5.Font = Enum.Font.SourceSans
+TextButton_5.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_5.TextSize = 14.000
+
+UICorner_5.Parent = TextButton_5
+
+TextButton_6.Parent = Buttons
+TextButton_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_6.Size = UDim2.new(0, 130, 0, 34)
+TextButton_6.Font = Enum.Font.SourceSans
+TextButton_6.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_6.TextSize = 14.000
+
+UICorner_6.Parent = TextButton_6
+
+TextButton_7.Parent = Buttons
+TextButton_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_7.Size = UDim2.new(0, 130, 0, 34)
+TextButton_7.Font = Enum.Font.SourceSans
+TextButton_7.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_7.TextSize = 14.000
+
+UICorner_7.Parent = TextButton_7
+
+TextButton_8.Parent = Buttons
+TextButton_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_8.Size = UDim2.new(0, 130, 0, 34)
+TextButton_8.Font = Enum.Font.SourceSans
+TextButton_8.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_8.TextSize = 14.000
+
+UICorner_8.Parent = TextButton_8
+
+-- Scripts:
+
+local function TBFFSA_fake_script() -- clear.LocalScript 
+	local script = Instance.new('LocalScript', clear)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Parent.Tab.Visible = false
+	end)
+	
+end
+coroutine.wrap(TBFFSA_fake_script)()
+local function XOIX_fake_script() -- Tab.Drag 
+	local script = Instance.new('LocalScript', Tab)
+
+	local UserInputService = game:GetService("UserInputService")
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+			
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			update(input)
+		end
+	end)
+end
+coroutine.wrap(XOIX_fake_script)()
+local function QDQC_fake_script() -- Tab.LocalScript 
+	local script = Instance.new('LocalScript', Tab)
+
+	local plr = game.Players.LocalPlayer
+	
+	plr:GetMouse().KeyDown:Connect(function(K)
+		if K == "e" then
+			script.Parent.Visible = true
+		end
+	end)
+end
+coroutine.wrap(QDQC_fake_script)()
+local function UQWTGA_fake_script() -- Tab.LocalScript 
+	local script = Instance.new('LocalScript', Tab)
+
+	local Player = game.Players.LocalPlayer
+	
+	Player.Chatted:connect(function(cht)
+		if cht:match(":fly") then
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/GG2213/flyLOL/main/fly"))()
+		end
+	end)
+	
+end
+coroutine.wrap(UQWTGA_fake_script)()
