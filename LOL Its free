@@ -1,6 +1,6 @@
 		game.StarterGui:SetCore("SendNotification",{
 			Title = "GG Fly",
-			Text = "F to fly",
+			Text = "X to fly",
 			icon = "rbxassetid://7072708278",
 			Duration = 2
 		})
@@ -9,7 +9,7 @@
 		flying = false
 		local potato = 1
 		Mouse.KeyDown:connect(function(key)
-			if key == "f" then
+			if key == "x" then
 				if potato == 1 then
 					repeat wait() until lplayer and lplayer.Character and lplayer.Character:FindFirstChild('HumanoidRootPart') and lplayer.Character:FindFirstChild('Humanoid')
 					repeat wait() until Mouse
@@ -33,12 +33,12 @@
 							repeat wait()
 								lplayer.Character.Humanoid.PlatformStand = true
 								if CONTROL.L + CONTROL.R ~= 0 or CONTROL.F + CONTROL.B ~= 0 then
-									SPEED = script.Parent.speed.Text
-									if script.Parent.speed.Text == "" then
+									SPEED = script.Parent.FlySpeed.Text
+									if script.Parent.FlySpeed.Text == "" then
 										SPEED = 100
 									end
 								elseif not (CONTROL.L + CONTROL.R ~= 0 or CONTROL.F + CONTROL.B ~= 0) and SPEED ~= 0 then
-									SPEED = 0
+									SPEED = 100
 								end
 								if (CONTROL.L + CONTROL.R) ~= 0 or (CONTROL.F + CONTROL.B) ~= 0 then
 									BV.velocity = ((workspace.CurrentCamera.CoordinateFrame.lookVector * (CONTROL.F + CONTROL.B)) + ((workspace.CurrentCamera.CoordinateFrame * CFrame.new(CONTROL.L + CONTROL.R, (CONTROL.F + CONTROL.B) * 0.2, 0).p) - workspace.CurrentCamera.CoordinateFrame.p)) * SPEED
@@ -87,6 +87,3 @@
 					lplayer.Character.Humanoid.PlatformStand = false
 					potato = 1
 				end end end)
-	end)
-	
-end
